@@ -4,6 +4,7 @@
 
 <script>
 export default {
+  props: ["number"],
   data: function() {
     return {
       number: 5
