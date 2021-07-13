@@ -1,5 +1,5 @@
 <template>
-  <h1>{{headerText}}</h1>
+  <slot></slot>
 </template>
 
 <script>
