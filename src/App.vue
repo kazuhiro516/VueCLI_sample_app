@@ -14,9 +14,20 @@
       <input
         id="title"
         type="number"
-        v-model.number="eventData.maxNumber"
+        v-model.trim="eventData.maxNumber"
       >
       <p>{{ typeof eventData.maxNumber }}</p>
+      <label for="maxNumber">テスト</label>
+      <input
+        id="title"
+        type="text"
+        v-model.trim="eventData.host"
+      >
+      <p>{{ typeof eventData.host }}</p>
+
+      <label for="detail">イベントの内容</label>
+      <textarea id="detail" cols="30" rows="10" v-model="detail"></textarea>
+      <p>{{ eventData.detail }}</p>
     </div>
   </div>
 </template>
@@ -30,7 +41,9 @@ export default {
       number: 14,
       eventData: {
         title: "タイトル",
-        maxNumber: 0
+        maxNumber: 0,
+        host: "",
+        detail: ""
       }
     }
   },
