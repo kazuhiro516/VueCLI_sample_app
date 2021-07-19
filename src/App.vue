@@ -10,13 +10,13 @@
     </LikeHeader>
     <div>
       <h2>イベントフォーム</h2>
-      <label for="title">タイトル</label>
+      <label for="maxNumber">最大人数</label>
       <input
         id="title"
-        type="text"
-        v-model.lazy="eventData.title"
+        type="number"
+        v-model.number="eventData.maxNumber"
       >
-      <p>{{ eventData.title }}</p>
+      <p>{{ typeof eventData.maxNumber }}</p>
     </div>
   </div>
 </template>
@@ -29,7 +29,8 @@ export default {
     return {
       number: 14,
       eventData: {
-        title: "タイトル"
+        title: "タイトル",
+        maxNumber: 0
       }
     }
   },
