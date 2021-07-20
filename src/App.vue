@@ -9,13 +9,6 @@
       </template>
     </LikeHeader>
     <div>
-      <h2>イベントフォーム</h2>
-      <label for="maxNumber">最大人数</label>
-      <input
-        id="title"
-        type="number"
-        v-model.trim="eventData.maxNumber"
-      >
       <p>{{ typeof eventData.maxNumber }}</p>
       <label for="maxNumber">テスト</label>
       <input
