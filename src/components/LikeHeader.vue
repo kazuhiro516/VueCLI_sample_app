@@ -1,5 +1,8 @@
 <template>
-  <slot></slot>
+  <slot name="title"></slot>
+  <hr>
+  <p>いいね</p>
+  <slot name="number"></slot>
 </template>
 
 <script>
